@@ -38,8 +38,10 @@ Laravel Homestead notes
 ```
 
 然后终端进入virtualbox.box所在目录：执行 `vagrant box add metadata.json`
-vagrant box list, 可以看到： laravel/homestead (virtualbox, 0.5.0)， 如果出现laravel/homestead (virtualbox, 0)，请重装。
-疑问： 如果 执行 vagrant box list 可以看到 laravel/homestead (virtualbox, 0.5.0) ，但在 vagrant up  阶段，出现  “box 'laravel/homestead' could not be found”  那么可以在Homestead目录下执行：vagrant init laravel/homestead，应该会解决问题。
+
+输入命令 `vagrant box list` 可以看到： `laravel/homestead (virtualbox, 0.5.0)`， 如果出现`laravel/homestead (virtualbox, 0)`，请重装。
+
+疑问： 如果 执行命令 `vagrant box list` 可以看到 `laravel/homestead (virtualbox, 0.5.0)` ，但在 `vagrant up`  阶段，出现  “box 'laravel/homestead' could not be found”，那么可以在Homestead目录下执行命令：`vagrant init laravel/homestead`，应该会解决问题。
 
 <a href="https://www.cnblogs.com/zero-zf/p/6031965.html">参考</a>
 
