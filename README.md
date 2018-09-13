@@ -44,7 +44,11 @@ vagrant box list, 可以看到： laravel/homestead (virtualbox, 0.5.0)， 如�
 <a href="https://www.cnblogs.com/zero-zf/p/6031965.html">参考</a>
 
 * 共享文件夹必须使用window的目录格式,demo:
-> H:\phpStudy\PHPTutorial\WWW\test\laravel5.7
+```
+folders:
+    - map: H:\phpStudy\PHPTutorial\WWW\test\laravel5.7 //必须使用window的目录格式
+      to: /home/vagrant/code/laravel5.7
+```
 
 * 通过 BIOS 来启用硬件虚拟化 (VT-x)。如果您在 UEFI 系统上使用 Hyper-V，可能还需要禁用 Hyper-V 才能访问 VT-x
 
